@@ -1,0 +1,260 @@
+:root {
+    --title:#595775;
+    --primary:#ABA6BF;
+    --secondary:#576875;
+    --background:#EEE0D7;
+    --links:#BF988F;
+    --section:#FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+
+.header {
+    background-color: var(--primary);
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+    height:fit-content;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+a {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--title);
+    text-decoration: none;
+    text-align: center;
+}
+
+section {
+    padding: 2rem;
+    margin: 3rem auto;
+    width: 80%;
+    height: fit-content;
+    background-color: var(--section);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p,span,pre,label{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    font-size: 24px;
+}
+
+h1{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--title);
+    font-size: 40px;
+}
+
+h2{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--title);
+    font-size: 36px;
+}
+
+h3{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--title);
+    font-size: 32px;
+}
+
+h4{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--title);
+    font-size: 28px;
+}
+
+h5{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--title);
+    font-size: 28px;
+}
+h6{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--title);
+    font-size: 28px;
+}
+
+
+.button{
+    color: var(--primary);
+    background-color: var(--secondary);
+    width: 30vw;
+    line-height: 4rem;
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    place-self:center;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    color: var(--primary);
+    background-color: var(--secondary);
+    width: 100%;
+    line-height: 4rem;
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    place-self:center;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacts{
+    margin-right: 5%;
+}
+
+.logo{
+    margin-right: 5%;
+}
+
+.left{
+    display: flex;
+    width: 50%;
+    margin-left: 5%;
+}
+
+#contentP1{
+    display: flex;
+    margin: 2vh 0 2vh 0;
+    height: max-content;
+    width: inherit;
+    justify-content: space-between;
+}
+
+#contentP2{
+    display: flex;
+    margin: 2vh 0 2vh 0;
+    height: max-content;
+    width: inherit;
+    justify-content: space-evenly;
+}
+.media{
+    max-width: 50%;
+    display: none;
+}
+
+
+.projects{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr); /* Three columns per row */
+    grid-gap: 40px;
+    height: max-content;
+
+}
+
+.project{
+    width: 100%;
+    height: max-content;
+}
+
+.prjimg{
+    width: 100%;
+    height: 60%;
+}
+
+form{
+    height: 60vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+}
+form div{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+}
+label{
+    width: 100%;
+}
+input{
+    background-color: var(--primary);
+    width: 100%;
+    height: 2rem;
+}
+
+.submit{
+    margin: 0 auto;
+}
+@media screen and (min-width: 1064px) {
+    body{
+        overflow: clip;
+    }
+
+    #contentP1{
+        margin: 5vh 0 5vh 0;
+        height: 50vh;
+    }
+
+    #contentP2{
+        margin: 5vh 0 5vh 0;
+        height: 50vh;
+    }
+
+    .media{
+        display:block;
+    }
+
+    .projects{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+        grid-gap: 40px;
+        height: 50vh;
+    }
+
+    .project{
+        height: 80%;
+    }
+    .buttons{
+        color: var(--primary);
+        background-color: var(--secondary);
+        width: 10vw;
+    }
+    .button{
+        width:10vw;
+    }
+}
